@@ -10,7 +10,8 @@ export const environment = {
     databaseURL: 'https://todo-app-c239f.firebaseio.com',
     projectId: 'todo-app-c239f',
     storageBucket: 'todo-app-c239f.appspot.com',
-    messagingSenderId: '465935469681'}
+    messagingSenderId: '465935469681'},
+    apiUrl: 'http://ec2co-ecsel-11p5ippf51j6n-435862307.us-east-1.elb.amazonaws.com:8099/tet/v1/touchpoints?touchpoint=Touchpoint1'
 };
 
 /*
