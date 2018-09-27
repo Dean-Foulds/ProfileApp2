@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Recommendations</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-card #good *ngFor="let recommendation of data?.recommendations" (click)="onGoToNewSinglePage(recommendation)">
+    <ion-card-header>
+      {{recommendation.touchpoint}}
+    </ion-card-header>
+    </ion-card>
+
+    <ion-card #bad (click)="onGoToNewSinglePage(recommendation)">
+    <ion-card-header>
+      <h1>error!</h1>
+    </ion-card-header>
+</ion-card>
+
+</ion-content>

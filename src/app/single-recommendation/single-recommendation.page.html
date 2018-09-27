@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title> {{recommendation.touchpoint}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+   <ion-card (click)="onGoToAllPage()">
+    <ion-card-header>
+      {{recommendation.touchpoint}}
+    </ion-card-header>
+    <ion-card-content>
+      {{recommendation.conversion_rate}}
+      {{recommendation.sellers_cost}}  
+      {{recommendation.campaign_cost}}
+    </ion-card-content>
+    </ion-card>
+
+
+</ion-content>
